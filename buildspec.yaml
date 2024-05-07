@@ -12,7 +12,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync build/ s3://${BUCKET_NAME}
+      - npm start
 artifacts:
   files: '*/'
   base-directory: build
